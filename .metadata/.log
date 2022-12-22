@@ -1,0 +1,1825 @@
+!SESSION 2022-12-22 23:33:53.401 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-22 23:34:23.832
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:34:23.832
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:34:23.832
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-22 23:34:27.183
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:26.047
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-data-jpa:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-data-jpa:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-data-jpa:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:26.049
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-data-jpa:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:26.049
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-data-jpa:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:26.590
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-aop:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:26.592
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:26.592
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-aop:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:28.486
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-jdbc:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-jdbc:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-jdbc:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:28.487
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-jdbc:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:28.487
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-jdbc:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:40.038
+!MESSAGE Could not download sources for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:40.038
+!MESSAGE Could not resolve artifact antlr:antlr:jar:sources:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:40.038
+!MESSAGE Missing antlr:antlr:jar:sources:2.7.7
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:52.119
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-thymeleaf:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:52.119
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:52.119
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-thymeleaf:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:52.633
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:52.633
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:52.633
+!MESSAGE Missing org.springframework.boot:spring-boot-starter:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:36:53.155
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-logging:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:36:53.155
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:36:53.155
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-logging:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:04.991
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-web:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-web:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-web:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:04.991
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-web:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:04.991
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-web:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:05.506
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-json:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-json:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-json:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:05.506
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-json:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:05.506
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-json:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:11.488
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-tomcat:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-tomcat:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-tomcat:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:11.488
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-tomcat:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:11.488
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-tomcat:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:26.864
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:26.864
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:26.864
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-test:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:44.610
+!MESSAGE Could not download sources for org.springframework.boot:spring-boot-starter-security:2.1.5.RELEASE
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.5.RELEASE
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.5.RELEASE
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:44.610
+!MESSAGE Could not resolve artifact org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.5.RELEASE
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:44.610
+!MESSAGE Missing org.springframework.boot:spring-boot-starter-security:jar:sources:2.1.5.RELEASE
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:37:55.584
+!MESSAGE Could not download sources for com.google.code.findbugs:jsr305:1.3.9
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.code.findbugs:jsr305:jar:sources:1.3.9
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.google.code.findbugs:jsr305:jar:sources:1.3.9
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:37:55.584
+!MESSAGE Could not resolve artifact com.google.code.findbugs:jsr305:jar:sources:1.3.9
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:37:55.584
+!MESSAGE Missing com.google.code.findbugs:jsr305:jar:sources:1.3.9
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:38:03.412
+!MESSAGE Could not download sources for com.google.code.findbugs:annotations:2.0.1
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.google.code.findbugs:annotations:jar:sources:2.0.1
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing com.google.code.findbugs:annotations:jar:sources:2.0.1
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:38:03.412
+!MESSAGE Could not resolve artifact com.google.code.findbugs:annotations:jar:sources:2.0.1
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:38:03.412
+!MESSAGE Missing com.google.code.findbugs:annotations:jar:sources:2.0.1
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-12-22 23:38:23.369
+!MESSAGE Timeout waiting for data to generate LS hover
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-22 23:40:02.348
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:40:02.348
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-12-22 23:40:27.714
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 17, method: 'textDocument/completion') has been cancelled
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 17, method: 'textDocument/completion') has been cancelled
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2073)
+	at org.eclipse.lsp4e.operations.completion.LSContentAssistProcessor.computeCompletionProposals(LSContentAssistProcessor.java:109)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$10(AsyncCompletionProposalPopup.java:378)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.AsyncCompletionProposalPopup.lambda$9(AsyncCompletionProposalPopup.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: The request (id: 17, method: 'textDocument/completion') has been cancelled
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$3(LanguageServerWrapper.java:265)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-22 23:41:34.702
+!MESSAGE Could not download javadoc for antlr:antlr:2.7.7
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$6(MavenImpl.java:608)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:219)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:577)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:562)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:270)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2022-12-22 23:41:34.702
+!MESSAGE Could not resolve artifact antlr:antlr:jar:javadoc:2.7.7
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2022-12-22 23:41:34.702
+!MESSAGE Missing antlr:antlr:jar:javadoc:2.7.7
+
+!ENTRY org.eclipse.ui 2 2 2022-12-22 23:43:21.033
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-12-22 23:44:13.500 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-22 23:44:17.823
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:44:17.823
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:44:17.823
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-22 23:44:20.952
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface 2 0 2022-12-22 23:53:38.569
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-22 23:53:38.569
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2022-12-23 00:02:46.262 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 00:02:55.633
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:02:55.633
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:02:55.633
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 00:02:58.348
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:02:58.348
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-23 00:02:58.790
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-12-23 00:04:04.339
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-12-23 00:07:20.331 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 00:07:24.564
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:07:24.564
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:07:24.564
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-23 00:07:28.465
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-12-23 00:07:39.796
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 00:08:46.850
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 00:08:46.850
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.jdt.junit 4 0 2022-12-23 00:11:59.217
+!MESSAGE No tests found with test runner 'JUnit 5'.
+
+!ENTRY org.eclipse.jdt.junit 4 0 2022-12-23 00:12:19.355
+!MESSAGE No tests found with test runner 'JUnit 5'.
+
+!ENTRY org.eclipse.jdt.junit 4 0 2022-12-23 00:13:08.258
+!MESSAGE No tests found with test runner 'JUnit 5'.
+
+!ENTRY org.eclipse.jdt.junit 4 0 2022-12-23 00:14:00.752
+!MESSAGE No tests found with test runner 'JUnit 5'.
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-12-23 01:03:42.093
+!MESSAGE An internal error occurred during: "File Transport Reader".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getLogService(Activator.java:202)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.log(Activator.java:213)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:200)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:199)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.equinox.p2.engine 4 4 2022-12-23 01:03:42.875
+!MESSAGE An error occurred while collecting items to be installed
+!SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2022-12-23 01:03:42.875
+!MESSAGE session context was:(profile=DefaultProfile, phase=org.eclipse.equinox.internal.p2.engine.phases.Collect, operand=, action=).
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-12-23 01:03:42.875
+!MESSAGE Failed to transfer artifact canonical: osgi.bundle,org.eclipse.wst.jsdt.ui,2.1.400.v202204072230.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Unable to read repository at https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.jsdt.ui_2.1.400.v202204072230.jar.
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getLogService(Activator.java:202)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.log(Activator.java:213)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:200)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:199)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.jsdt.ui_2.1.400.v202204072230.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-12-23 01:03:42.875
+!MESSAGE Failed to transfer artifact canonical: osgi.bundle,org.eclipse.wst.sse.ui.infopop,1.0.300.v201903222120.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Unable to read repository at https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!STACK 0
+java.net.SocketException: Socket closed
+	at java.base/sun.nio.ch.NioSocketImpl.endRead(NioSocketImpl.java:248)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:327)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readFully(SSLSocketInputRecord.java:461)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:243)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1508)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1479)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:195)
+	at org.apache.hc.core5.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:173)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:135)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:180)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.875
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.875
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.kaist.ac.kr/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirrors.neusoft.edu.cn/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.library.ucy.ac.cy/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirrors.nju.edu.cn/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.csclub.uwaterloo.ca/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.osuosl.org/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.umd.edu/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.mirror.liteserver.nl/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.dkm.cz/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.halifax.rwth-aachen.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.mirror.garr.it/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.linux.org.tr/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.ibcp.fr/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.aarnet.edu.au/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.aarnet.edu.au/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.acc.umu.se/mirror/eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirrors.dotsrc.org/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://rhlx01.hs-esslingen.de/pub/Mirrors/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.dkm.cz/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.fau.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.sse.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.artifact.repository 4 0 2022-12-23 01:03:42.876
+!MESSAGE Failed to transfer artifact canonical: osgi.bundle,org.eclipse.wst.standard.schemas,1.0.800.v201901071922.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Unable to read repository at https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!STACK 0
+java.net.SocketException: Connection or inbound has closed
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1041)
+	at org.apache.hc.core5.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:195)
+	at org.apache.hc.core5.http.impl.io.ContentLengthInputStream.read(ContentLengthInputStream.java:173)
+	at org.apache.hc.core5.http.io.EofSensorInputStream.read(EofSensorInputStream.java:135)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:180)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.876
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.876
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.kakao.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.yz.yamagata-u.ac.jp/pub/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.jaist.ac.jp/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.mirror.rafal.ca/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirrors.nju.edu.cn/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirrors.xmission.com/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirrors.jevincanders.net/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.clarkson.edu/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.fau.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.dogado.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.tspu.ru/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirrors.dotsrc.org/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.acc.umu.se/mirror/eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.snt.utwente.nl/pub/software/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.tspu.ru/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.snt.utwente.nl/pub/software/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.mirror.garr.it/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.c3sl.ufpr.br/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.ibcp.fr/pub/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.linux.org.tr/eclipse//releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://ftp.halifax.rwth-aachen.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.artifact.repository 4 13 2022-12-23 01:03:42.877
+!MESSAGE Retry another mirror
+!SUBENTRY 3 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.dogado.de/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 2 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://eclipse.mirror.liteserver.nl/releases/2022-09/202209141001/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.umd.edu/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.wst.validation.ui_1.2.601.v202007142017.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.web.ui_1.2.300.v202206160209.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.web.ui.infopop_1.0.300.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.web_core.feature_3.27.0.v202207150226.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.web_js_support.feature_3.22.0.v202207121749.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.web_ui.feature_3.27.0.v202208280234.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.web_userdoc.feature_3.18.0.v202004271556.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.webtools.doc.user_1.0.500.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws_1.1.600.v202007222105.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.explorer_1.1.0.v202204231557.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.infopop_1.0.400.v201903050508.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.parser_1.1.0.v201910301957.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.service.policy_1.0.450.v201903050508.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.service.policy.ui_1.0.500.v201903050508.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.ws.ui_1.2.0.v201910301957.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.ws_core.feature_3.26.0.v202205160314.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.ws_ui.feature_3.9.100.v202004082157.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.ws_userdoc.feature_3.1.501.v201909051708.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsdl_1.3.0.v201910301957.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsdl.ui_1.3.100.v202004082216.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsdl.ui.doc.user_1.0.850.v201903222115.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsdl.validation_1.3.100.v202205160247.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsi_1.1.400.v202205160247.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsi.ui_1.1.100.v202007221938.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201903222115.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xml.ui_1.2.700.v202208280234.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xml.ui.infopop_1.0.400.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.xml_core.feature_3.27.0.v202207150226.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.xml_ui.feature_3.27.0.v202208280234.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/features/org.eclipse.wst.xml_userdoc.feature_3.18.0.v202004271556.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xmleditor.doc.user_1.1.0.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xsd.core_1.2.100.v202008180353.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xsd.ui_1.3.500.v202207121749.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.wst.xsdeditor.doc.user_1.0.800.v201903222120.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://mirror.clarkson.edu/eclipse/releases/2022-09/202209141001/plugins/org.eclipse.xsd_2.18.0.v20220616-0915.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.eclipse.xsd.edit_2.11.0.v20200723-0820.jar.
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2022-12-23 01:03:42.877
+!MESSAGE Error while reading from repository: https://download.eclipse.org/releases/2022-09/202209141001/plugins/org.uddi4j_2.0.5.v200805270300.jar.
+!SESSION 2022-12-23 01:03:48.751 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 01:04:05.099
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 01:04:05.099
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 01:04:05.099
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-23 01:04:08.593
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-12-23 01:04:20.027
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2022-12-23 01:06:58.825
+!MESSAGE Unexpected exception: Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:831)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallError(CachingMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.installErrorReport(MarketplaceDiscoveryStrategy.java:958)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.installErrorReport(MarketplaceCatalog.java:621)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard$3.run(MarketplaceWizard.java:854)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.apache.hc.client5.http.HttpResponseException: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponse(RequestTemplate.java:64)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:38)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:822)
+	... 5 more
+!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2022-12-23 01:06:58.826
+!MESSAGE Cannot complete request to https://marketplace.eclipse.orginstall/error/report: status code: 400, reason phrase: Bad Request
+!STACK 0
+org.apache.hc.client5.http.HttpResponseException: status code: 400, reason phrase: Bad Request
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponseStatus(RequestTemplate.java:97)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.handleResponse(RequestTemplate.java:64)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:46)
+	at org.eclipse.epp.internal.mpc.core.transport.httpclient.RequestTemplate.execute(RequestTemplate.java:38)
+	at org.eclipse.epp.internal.mpc.core.service.DefaultMarketplaceService.reportInstallError(DefaultMarketplaceService.java:822)
+	at org.eclipse.epp.internal.mpc.core.service.CachingMarketplaceService.reportInstallError(CachingMarketplaceService.java:421)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceDiscoveryStrategy.installErrorReport(MarketplaceDiscoveryStrategy.java:958)
+	at org.eclipse.epp.internal.mpc.ui.catalog.MarketplaceCatalog.installErrorReport(MarketplaceCatalog.java:621)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard$3.run(MarketplaceWizard.java:854)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2022-12-23 01:07:03.901
+!MESSAGE Problems occurred while performing provisioning operation: operation plan must be resolved
+!STACK 0
+java.lang.IllegalStateException: operation plan must be resolved
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCurrentJREOperation(ProvUI.java:338)
+	at org.eclipse.equinox.internal.p2.ui.ProvUI.toCompabilityWithCurrentJREProvisioningPlan(ProvUI.java:325)
+	at org.eclipse.epp.internal.mpc.ui.wizards.MarketplaceWizard.lambda$5(MarketplaceWizard.java:876)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SESSION 2022-12-23 01:07:42.729 -----------------------------------------------
+eclipse.buildId=4.16.1.202210240748
+java.version=17.0.4.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 01:07:51.892
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 01:07:51.892
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 01:07:51.892
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.edit.text.java.rename.element"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.ui.edit.rename"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-12-23 01:07:55.948
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\slows'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-12-23 01:08:33.722
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2022-12-23 01:09:07.146
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-12-23 01:09:07.146
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.483
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.consumption.ui.doc.user_1.0.700.v201903222115 [773]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.486
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jdt.doc.user_3.15.1500.v20220829-1143 [262]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.490
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis2.ui.doc.user_1.0.200.v201903222115 [769]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.492
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.command.env.doc.user_1.5.400.v201903222115 [808]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.496
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.dtdeditor.doc.user_1.1.0.v201903222120 [821]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.499
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.platform.doc.user_4.25.0.v20220830-0901 [408]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.500
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.j2ee.doc.user_1.1.400.v202101072335 [719]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.503
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xmleditor.doc.user_1.1.0.v201903222120 [873]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.506
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.xsdeditor.doc.user_1.0.800.v201903222120 [876]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.508
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ejb.doc.user_1.1.301.v201903222024 [716]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.510
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.axis.ui.doc.user_1.1.200.v201903222115 [762]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.512
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsdl.ui.doc.user_1.0.850.v201903222115 [860]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.513
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.webtools.doc.user_1.0.500.v201903222120 [850]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.516
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.server.ui.doc.user_1.1.600.v201901310132 [487]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.519
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.pde.doc.user_3.14.1700.v20220831-1613 [388]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.520
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.ws.doc.user_1.0.700.v201903222115 [783]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.523
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.wsi.ui.doc.user_1.0.750.v201903222115 [864]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.524
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.jst.server.ui.doc.user_1.0.600.v201901310132 [751]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.help.base 2 0 2022-12-23 02:20:40.526
+!MESSAGE Unable to consume Lucene index from bundle 'org.eclipse.wst.sse.doc.user_1.2.0.v201903222120 [843]'. The index should be rebuilt with Lucene 8.4.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:22:35.399
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:22:36.523
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:22:40.262
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:22:41.625
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:23:51.793
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:25:32.033
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:27:35.329
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:28:15.698
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:30:10.002
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-12-23 02:30:34.355
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled

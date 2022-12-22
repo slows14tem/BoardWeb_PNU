@@ -1,0 +1,31 @@
+package com.rubypaper.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.rubypaper.board.persistence.MemberRepository;
+
+@Controller
+public class SecurityController {
+	@Autowired
+	private MemberRepository memberRepo;
+	
+	@GetMapping("/system/login")
+	public void login() {}
+
+	@GetMapping("/system/accessDenied")
+	public void accessDenied() {}
+	
+	@GetMapping("/system/logout")
+	public void logout() {}
+	
+	@PostMapping("/system/join")
+	public void join() {
+		
+	}
+
+	@GetMapping("/admin/adminPage")
+	public void admin() {}
+}

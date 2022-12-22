@@ -1,0 +1,15 @@
+package com.rubypaper.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.rubypaper.board.persistence.MemberRepository;
+
+@Controller
+public class MemberController {
+	@Autowired
+	private MemberRepository memberRepo;
+	
+	
+
+}

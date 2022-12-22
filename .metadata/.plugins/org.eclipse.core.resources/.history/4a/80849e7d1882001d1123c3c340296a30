@@ -1,0 +1,24 @@
+package com.rubypaper.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.rubypaper.board.domain.Member;
+import com.rubypaper.board.persistence.MemberRepository;
+import com.rubypaper.board.service.MemberService;
+
+@Controller
+public class MemberController {
+	
+	@Autowired
+	private MemberService memberService;
+	
+	@PostMapping("/joinMem")
+	public String join(Member member) {
+		memberService.join(member);
+		return "redirect:/system/login";
+	}
+
+}
