@@ -15,5 +15,5 @@ public interface BoardService {
 
 	Board getBoard(Board board);
 	
-	Page<Board> getBoardList(Search search);
+	Page<Board> getBoardList(Search search, int page);
 }

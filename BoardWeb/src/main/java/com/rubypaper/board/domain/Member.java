@@ -3,6 +3,7 @@ package com.rubypaper.board.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -10,6 +11,7 @@ import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OrderBy;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -35,5 +37,9 @@ public class Member {
 	
 	@OneToMany(mappedBy="member", fetch=FetchType.EAGER)
 	private List<Board> boardList = new ArrayList<Board>();
+	
+	@OneToMany(mappedBy = "member", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @OrderBy("seq asc") // 댓글 정렬
+    private List<Comment> comments;
 
 }

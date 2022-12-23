@@ -12,12 +12,13 @@ import com.rubypaper.board.domain.Board;
 import com.rubypaper.board.domain.QBoard;
 import com.rubypaper.board.domain.Search;
 import com.rubypaper.board.persistence.BoardRepository;
-
 @Service
 public class BoardServiceImpl implements BoardService {
 	
 	@Autowired
 	private BoardRepository boardRepo;
+	
+	
 
 	public void insertBoard(Board board) {
 		boardRepo.save(board);		
@@ -39,7 +40,7 @@ public class BoardServiceImpl implements BoardService {
 		return boardRepo.findById(board.getSeq()).get();
 	}
 		
-	public Page<Board> getBoardList(Search search) {		
+	public Page<Board> getBoardList(Search search, int page) {		
 		BooleanBuilder builder = new BooleanBuilder();
 		
 		QBoard qboard = QBoard.board;
@@ -50,7 +51,7 @@ public class BoardServiceImpl implements BoardService {
 		      builder.and(qboard.content.like("%" + search.getSearchKeyword() + "%"));
 		}		
 		
-		Pageable pageable = PageRequest.of(0, 10, Sort.Direction.DESC, "seq");
+		Pageable pageable = PageRequest.of(page, 10, Sort.Direction.DESC, "seq");
 		
 		return boardRepo.findAll(builder, pageable);
 	}

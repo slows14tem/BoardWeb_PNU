@@ -59,6 +59,17 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 </table>
 <br>
+
+	<div class="pagination">
+		<tr align="center"
+			th:each="page: ${#numbers.sequence(0,totalPage -1)}">
+			<td>&nbsp;<a
+				th:href="@{/board/getBoardList(searchCondition=${search.searchCondition}, searchKeyword=${search.searchKeyword}, page=${pageStat.index})}"				
+				th:text="${pageStat.index+1}"></a>&nbsp;
+			</td>
+		</tr>
+	</div>
+
 <a th:href="@{/board/insertBoard}">게시글 등록</a>
 </body>
 </html>

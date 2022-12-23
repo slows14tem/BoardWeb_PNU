@@ -36,6 +36,7 @@ public class MemberController {
 	
 	@GetMapping("/deleteMember")
 	public String deleteMember(Member member, @AuthenticationPrincipal SecurityUser principal) {
+		//현재 접속중인 아이디가 탈퇴할 수 있도록 접속중인 아이디를 멤버에 저장
 		member.setId(principal.getUsername());
 		memberService.deleteMember(member);
 		return "redirect:/";
