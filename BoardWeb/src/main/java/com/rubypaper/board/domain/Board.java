@@ -26,7 +26,7 @@ import lombok.ToString;
 @Entity
 public class Board {
 	@Id@GeneratedValue
-	@Column(name="board_seq")
+	@Column(name="BOARD_SEQ")
 	private Long seq;
 	
 	private String title;

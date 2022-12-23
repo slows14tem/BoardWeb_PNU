@@ -27,19 +27,19 @@ public class CommentRepositoryTest {
 	@Test
 	public void commentlist() {
 		Board board = new Board();
-		board.setSeq(33L);
+		board.setSeq(48L);
 		Pageable pageable = PageRequest.of(0, 10, Sort.Direction.DESC, "seq");
-		Page<Comment> comlist = commentRepo.findByBoard_Seq(board, pageable);
-		System.out.println(comlist.getSize());
+		Page<Comment> comlist = commentRepo.findByBoard_Seq(48L, pageable);
+		System.out.println(comlist.isEmpty());
 		for(Comment m : comlist) {
-			System.out.println(m.toString());
+			System.out.println(m.getComments());
 		}
 	}
 	
 //	@Test
 	public void commentTest() {
 		Board board = new Board();
-		board.setSeq(33L);
+		board.setSeq(48L);
 		Member member = new Member();
 		member.setId("member");
 		Comment comment = new Comment();

@@ -20,15 +20,11 @@ public class CommentServiceImpl implements CommentService {
 	
 	@Override
 	public Page<Comment> getCommentList(Board board, int page){
-		Long brdseq = board.getSeq();
 		Pageable pageable = PageRequest.of(page, 10, Sort.Direction.DESC, "seq");
-		Page<Comment> comlist = commentRepo.findByBoard(board, pageable);
-		for(Comment m : comlist) {
-			System.out.println(m.toString());
-		}
-		return commentRepo.findByBoard(board, pageable);
+		return commentRepo.findByBoard_Seq(board.getSeq(), pageable);
 
 	}
+	//등록은 아무나, 수정/삭제는 작성자만
 
 
 }

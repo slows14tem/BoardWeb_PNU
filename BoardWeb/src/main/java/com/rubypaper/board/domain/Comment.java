@@ -30,7 +30,7 @@ public class Comment {
 	private Date createDate = new Date();
 	
 	@ManyToOne
-    @JoinColumn(name = "board_seq")
+    @JoinColumn(name = "BOARD_SEQ")
     private Board board;
  
     @ManyToOne
