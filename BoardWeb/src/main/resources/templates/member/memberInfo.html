@@ -6,11 +6,11 @@
 </head>
 <body th:align="center">
 <h1>로그인</h1>
-<form th:action="@{/system/joinMem}" method="post">
+<form th:action="@{/member/updateMember}" method="post">
 <table th:align="center" border="1" th:cellpadding="0" th:cellspacing="0">
 	<tr>
 		<td bgcolor="orange">아이디</td>
-		<td><input type="text" name="id" th:value="${member.id}"/></td>
+		<td><input type="text" name="id" th:value="${member.id}" readonly/></td>
 	</tr>
 	<tr>
 		<td bgcolor="orange">비밀번호</td>

@@ -27,9 +27,18 @@ public class MemberServiceImpl implements MemberService {
 	
 	public Member info(Member member) {
 		Member temmem = memberRepo.findById(member.getId()).get();
-		System.out.println(temmem.toString());
-		return memberRepo.findById(member.getId()).get();
-		
+		return temmem;
+	}
+	
+	public void updateMember(Member member) {
+		Member newMem = memberRepo.findById(member.getId()).get();
+		newMem.setPassword(encoder.encode(member.getPassword()));
+		newMem.setName(member.getName());
+		memberRepo.save(newMem);
+	}
+	
+	public void deleteMember(Member member) {
+		memberRepo.deleteById(member.getId());
 	}
 
 }
