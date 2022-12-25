@@ -17,7 +17,6 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString(exclude="member")
 @Entity
 public class Comment {
 	@Id

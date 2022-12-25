@@ -19,7 +19,7 @@ public class MemberServiceImpl implements MemberService {
 	public void join(Member member) {
 		//회원가입은 모두가 접근 가능해야하기때문에 system 컨트롤러에서 처리
 		//아이디 중복 체크 필요함
-		//joinmem에서 아이디, 비밀번호, 이름 입력받고 비밀번호 암호화, enabled, role을 자동 처리한 뒤 db저장
+		//SecurityController의 joinmem에서 아이디, 비밀번호, 이름 입력받고 비밀번호 암호화, enabled, role을 자동 처리한 뒤 db저장
 		member.setPassword(encoder.encode(member.getPassword()));
 		member.setEnabled(true);
 		member.setRole(Role.ROLE_MEMBER);

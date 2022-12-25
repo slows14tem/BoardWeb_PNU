@@ -20,9 +20,11 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+//연관관계 맵핑되면 롬복 Tostring이 생성될 때 순환참조가 일어나서 StackOverflowError가 발생한다.
+//https://sorjfkrh5078.tistory.com/310
+
 @Getter
 @Setter
-@ToString//(exclude="member")
 @Entity
 public class Board {
 	@Id@GeneratedValue
