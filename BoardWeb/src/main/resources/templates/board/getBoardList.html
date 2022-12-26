@@ -12,7 +12,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <!-- <span th:text="${member.name}">message</span> -->
 <!-- <span sec:authentication="principal.member.name"></span> -->
 <span sec:authorize="isAuthenticated()">
-	<b><font color="red"><span sec:authentication="principal.member.id"></span>
+	<b><font color="red"><span sec:authentication="principal.member.name"></span>
 	<!-- 회원정보 수정하면 여기서 바로 적용이 안되는 현상(db에는 바로 수정가능)
 	securityuser의 principal 업데이트 하려면 다시 로그인 해야함
 	 ==> 수정되지 않는 pk값인 id를 표시하는 걸로 변경 -->

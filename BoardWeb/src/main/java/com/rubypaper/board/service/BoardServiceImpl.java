@@ -36,6 +36,8 @@ public class BoardServiceImpl implements BoardService {
 	}	
 	
 	public Board getBoard(Board board) {
+		//다이나믹 쿼리를 통한 게시글 조회수 증가
+		boardRepo.updateView(board.getSeq());
 		return boardRepo.findById(board.getSeq()).get();
 	}
 		

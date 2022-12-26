@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 INDEX VERSION 1.131+C:\Users\slows\Desktop\springboot\.metadata\.plugins\org.eclipse.jdt.core
 1575857542.index
 2010343826.index
@@ -112,3 +113,7 @@ INDEX VERSION 1.131+C:\Users\slows\Desktop\springboot\.metadata\.plugins\org.ecl
 3490056345.index
 1244762228.index
 2580660318.index
+=======
+INDEX VERSION 1.131+C:\Users\user\Desktop\springboot\BoardWeb_PNU\.metadata\.plugins\org.eclipse.jdt.core
+1108539383.index
+>>>>>>> Stashed changes
