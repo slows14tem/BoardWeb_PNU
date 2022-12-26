@@ -19,7 +19,7 @@ QuerydslPredicateExecutor<Board> {
 	
 	//게시글 조회수 증가
 	@Transactional	//데이터 수정, 삭제중 문제가 발생했을 때를 위한 롤백되도록 하는 어노테이션
-	@Modifying	//executeQuery 에서 executeUpdate로 변경
+	@Modifying	//executeQuery 에서 executeUpdate로 변경하는 어노테이션
     @Query("update Board b set b.cnt = b.cnt + 1 where b.seq = :seq")
     int updateView(Long seq);
 }

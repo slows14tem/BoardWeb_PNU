@@ -5,13 +5,6 @@
 <head>
 <title>게시글 상세</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<th:block th:if="${#strings.length(data.message) != 0}">
-		<script>
-			top.alert("[[${data.message}]]");
-		</script>
-	</th:block>
-</head>
-
 <body th:align="center">
 	<h1>게시글 상세</h1>
 	<form th:action="@{/board/updateBoard}" method="post">
@@ -39,19 +32,36 @@
 				<td bgcolor="orange" th:text="조회수"></td>
 				<td th:text="${board.cnt}"></td>
 			</tr>
-			<tr>
-				<td th:if="${board.member.id == member.id}" colspan="2" align="center"><input type="submit"
-					value="게시글 수정"></td>
-				<td th:unless="${board.member.id == member.id}" colspan="2" align="center"></td>
+			<tr th:if="${board.member.id == member.id}">
+			<!-- 작성자와 로그인한 사람을 비교해서 맞으면 수정, 삭제 버튼 활성화 -->
+				<td colspan="2" align="center">
+					<button type="submit">게시글 수정</button>&nbsp;
+					<button th:formaction="@{/board/deleteBoard(seq=${board.seq})}"
+						type="submit">게시글 삭제</button>
+				</td>
 			</tr>
 		</table>
 	</form>
 	<a th:href="@{/board/insertBoard}">글등록</a>&nbsp;&nbsp;&nbsp;
 	<a sec:authorize="hasRole('ROLE_ADMIN')"
-		th:href="@{/board/deleteAlert}">글삭제</a>&nbsp;&nbsp;&nbsp;
-		<!-- th:href="@{/board/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;&nbsp; -->
+		th:href="@{/board/deleteBoard(seq=${board.seq})}">글삭제</a>&nbsp;&nbsp;&nbsp;
 	<a th:href="@{/board/getBoardList}">글목록</a>
-	<br/>&nbsp;&nbsp;&nbsp;
+	<br />&nbsp;&nbsp;&nbsp;
+
+	<div>Write a Comment</div>
+	<form th:action="@{/board/insertComment}" method="post">
+		<input name="board" type="hidden" th:value="${board.seq}">
+		<!-- 테이블의 board 필드에 현재 게시글의 seq번호를 직접 입력... -->
+		<div>
+			<textarea name="comments" cols="50" rows="5" placeholder="댓글을 입력하세요"></textarea>
+		</div>
+		<div>
+			<input type="submit" value="등록">
+		</div>
+		<!-- <div class="card-body" style="font-size: small"><a href="/auth/login">로그인</a>을 하시면 댓글을 등록할 수 있습니다.</div> 
+            현재는 로그인을 해야 게시판에 접근할 수 있기 때문에 이 기능은 의미가 없다. 차우 로그인없이도 접근하게 만들 계획일때 다시 구현-->
+	</form>
+	</div>
 
 	<!-- <div>
 		<div>Comments</div>
@@ -68,46 +78,33 @@
 	<div>
 		<div>Comments</div>
 		<div th:each="comment, state : ${comment}">
-		<form th:action="@{/board/updateComment}" method="post">
-			<table th:align="center" border="1">
-				<tr>					
-					<td th:text="${comment.member.id}"></td>
-					<td th:text="${comment.createDate}"></td>
-					<td><button type="submit">수정</button>&nbsp;
-						<button th:formaction="@{/board/deleteComment}" type="submit">삭제</button>
-						<!-- th:formaction == th:action의 주소를 오버라이딩 하는 개념 -->
-						
-				</tr>
-				<br />
-				<tr>
-					<td th:align="center" colspan="3">
-					<input name="seq" type="hidden" th:value="${comment.seq}">
-					<textarea name="comments" cols="50" th:text="${comment.comments}"></textarea>
-					<input name="board" type="hidden" th:value="${board.seq}">
-					</td>
-				</tr>
-			</table>
+			<form th:action="@{/board/updateComment}" method="post">
+				<table th:align="center" border="1">
+					<tr>
+						<td th:text="${comment.member.name}"></td>
+						<td th:text="${comment.createDate}"></td>
+						<td align="right" th:if="${comment.member.id == member.id}">
+							<button type="submit">수정</button>&nbsp;
+							<button th:formaction="@{/board/deleteComment}" type="submit">삭제</button>
+							<!-- th:formaction == th:action의 주소를 오버라이딩 하는 개념 -->
+					</tr>
+					<br />
+					<tr>
+						<td th:align="center" colspan="3"><input name="seq"
+							type="hidden" th:value="${comment.seq}"> <textarea
+								name="comments" cols="50" th:text="${comment.comments}"></textarea>
+							<input name="board" type="hidden" th:value="${board.seq}">
+						</td>
+					</tr>
+				</table>
 			</form>
 		</div>
 	</div>
 	<!-- 댓글도 페이징 필요 -->
+
+	<br />
 	
-	<br/>
-    <div> Write a Comment</div>
-    <form th:action="@{/board/insertComment}" method="post">
-        <input name="board" type="hidden" th:value="${board.seq}">	<!-- 테이블의 board 필드에 현재 게시글의 seq번호를 직접 입력... -->
-            <div>
-                <textarea name="comments" cols="50" rows="5" placeholder="댓글을 입력하세요"></textarea>
-            </div>
-            <br/>
-            <div>
-                <input type="submit" value="등록">
-            </div>
-            <!-- <div class="card-body" style="font-size: small"><a href="/auth/login">로그인</a>을 하시면 댓글을 등록할 수 있습니다.</div> 
-            현재는 로그인을 해야 게시판에 접근할 수 있기 때문에 이 기능은 의미가 없다. 차우 로그인없이도 접근하게 만들 계획일때 다시 구현-->
-    </form>
-</div>
-	
+
 
 </body>
 </html>

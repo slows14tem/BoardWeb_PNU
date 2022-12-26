@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.rubypaper.board.domain.Board;
-import com.rubypaper.board.domain.Common;
 import com.rubypaper.board.domain.Search;
 import com.rubypaper.board.security.SecurityUser;
 import com.rubypaper.board.service.BoardService;
@@ -42,17 +41,6 @@ public class BoardController {
 		boardService.updateBoard(board);
 		return "forward:getBoardList";
 	}
-	
-	@GetMapping("/deleteAlert")
-	public String deleteAlert(Board board, Model model, @AuthenticationPrincipal SecurityUser principal) {
-		if (principal.getMember().getId() == board.getMember().getId()) {
-			return "/board/deleteBoard?seq="+board.getSeq();
-		} else {
-			Common data = new Common("삭제할 수 없습니다.");
-			model.addAttribute("data", data);
-			return "forward:getBoardList";
-		}	
-	}
 
 	@GetMapping("/deleteBoard")
 	public String deleteBoard(Board board) {
@@ -81,7 +69,7 @@ public class BoardController {
 		model.addAttribute("board", boardService.getBoard(board));
 		//게시글 상세에서 해당 게시물의 댓글들을 모아오기 위해서 comment를 모아와서 getBoard에 넘겨줌
 		model.addAttribute("comment", commentService.getCommentList(board, page));
-		//현재 인증받은 사람이 게시물의 작성자가 아니면 삭제 버튼을 제거하여 수정하지 못하게 함
+		//현재 인증받은 멤버의 정보를 모델에 담아 뷰에 전달(게시물, 댓글의 작성자와 로그인 맴버를 비교하기 위해서)
 		model.addAttribute("member", principal.getMember());
 		return "board/getBoard";
 	}
