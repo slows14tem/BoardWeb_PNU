@@ -30,6 +30,7 @@ public class SecurityController {
 	
 	@PostMapping("/system/joinMem")
 	public String join(Member member) {
+		memberService.join(member);
 		return "redirect:/system/login";
 	}
 

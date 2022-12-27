@@ -34,7 +34,7 @@ public class Member {
 	
 	private boolean enabled;
 	
-	@OneToMany(mappedBy="member", fetch=FetchType.EAGER)
+	@OneToMany(mappedBy="member", fetch=FetchType.EAGER, cascade = CascadeType.REMOVE)
 	private List<Board> boardList = new ArrayList<Board>();
 	
 	@OneToMany(mappedBy = "member", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)

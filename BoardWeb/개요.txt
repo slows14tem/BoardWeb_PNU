@@ -1,19 +1,19 @@
 게시판 프로젝트
 1. 소개
 전반적인 웹의 기본 소양이 되는 CRUD 기능 구현 훈련을 위한 게시판 생성 프로젝트이다.
-본 프로젝트는 '스프링 부트 퀵스타트 - 누구나 끝까지 따라 할 수 있는' 의 Chapter8의 게시판을 기본으로 한다.
-교제의 내용에 몇가지 추가적인 사항들을 추가하여 Spring Boot 와  JPA등에 대한 이해도를 높이려고 한다.
+본 프로젝트는 루비페이퍼 출판사의 '스프링 부트 퀵스타트 - 누구나 끝까지 따라 할 수 있는' 의 Chapter8 게시판을 기본으로 한다.
+교제의 내용에 몇가지 사항들을 추가하여 Spring Boot 와  JPA등에 대한 이해도를 높이려고 한다.
 
 2. 개요
-명칭: Board Service
+명칭: BoardWeb
 주요기능 
-	게시판 CRUD 및 페이징 처리
-	사용자 CRUD, 로그인, 유효성 검사 및 중복 검사
-	댓글 CRUD
+	게시판 게시물 목록 생성, 새 개시물 등록, 수정, 삭제 및 페이징 처리
+	사용자 로그인, 유효성 검사 및 중복 검사
+	개시물의 댓글 목록 생성, 새 댓글 등록, 수정, 삭제
 개발 언어 JAVA 17
-개발환경 : 스프링부트, jpa, security, thymeleaf, h2 database, git
+개발환경 : Spring Boot, JPA, Spring Security, Thymeleaf, H2 database, Git
 
-2. 기존 교제의 게시판 구성
+게시판 상세
 Entity - Board, Member, Role
 연관관계 매핑 - Board, Member 양방향 연관관계 생성
 Repository - MemberRepository, BoardRepository 구현, 
@@ -28,11 +28,14 @@ Spring Security 커스터마이징 및 시큐리티 화면 개발, 비밀번호 
 MemberController, MemberService 추가하여 Member CRUD 구현
 index페이지에 회원가입 항목 추가
 회원정보 조회, 수정 및 회원 탈퇴 추가
-CommentController, CommentService 추가하여 댓글 관련 CRUD 구현
-getBoard와 연관관계 매핑
+Comment Entity, CommentController, CommentService 추가하여 댓글 관련 CRUD 구현
+Board Entity, Member Entity와 연관관계 매핑
 쿼리메소드 활용하여 해당 게시물과 매핑된 댓글 리스트 불러오기
 게시글 조회수 증가
 해당 게시물, 댓글 작성자만 수정, 삭제 가능하도록 만들기
+회원가입시 아이디 중복 체크
+Thymeleaf로 구성된 Presentation Layer에 부트스트랩 적용
 
 목표 기능 구현
-회원가입시 아이디 중복 체크해서 화면에 표시
+각종 오류들 alert메세지 띄우기(프론트 영역이라고 생각해서 이번 프로젝트에서는 구현 생략)
+회원가입시 정보 추가(비밀번호 2회입력해서 확인하기, e-mail등)
