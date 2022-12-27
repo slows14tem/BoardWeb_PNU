@@ -15,7 +15,7 @@
 4. 개발환경 : Spring Boot, JPA, Spring Security, Thymeleaf, H2 database, Git
 
 ## 게시판 전체 구조
-![게시판 구조](https://user-images.githubusercontent.com/106790381/209680321-1d40a04b-2049-4cac-9489-6bb41f18ce99.jpg)
+![게시판 구조](https://user-images.githubusercontent.com/106790381/209701215-250d8ee2-8b0b-431a-8c2e-e74228c26ce3.jpg)
 
 ## View 구성
 
