@@ -1,6 +1,5 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
-	<!-- 타임리프와 시큐리티를 연동하기 위한 모듈 -->
 
 
 <head>
