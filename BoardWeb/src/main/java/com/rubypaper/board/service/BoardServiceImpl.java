@@ -55,6 +55,7 @@ public class BoardServiceImpl implements BoardService {
 		Pageable pageable = PageRequest.of(page, 10, Sort.Direction.DESC, "seq");
 		
 		return boardRepo.findAll(builder, pageable);
+		//boardRepo.findAll(builder, pageable).~~를 통해서 page관련 메소드 활용 가능
 	}
 
 }

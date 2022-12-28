@@ -39,3 +39,4 @@ Thymeleaf로 구성된 Presentation Layer에 부트스트랩 적용
 목표 기능 구현
 각종 오류들 alert메세지 띄우기(프론트 영역이라고 생각해서 이번 프로젝트에서는 구현 생략)
 회원가입시 정보 추가(비밀번호 2회입력해서 확인하기, e-mail등)
+forward, redirect 구분 좀더 공부
