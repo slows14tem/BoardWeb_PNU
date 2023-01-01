@@ -27,7 +27,7 @@ public class CommentController {
 		return "redirect:/board/getBoard?seq="+comment.getBoard().getSeq();
 		//forward일때 Request method 'POST' not supported (405)문제
 			//get method로 변경하면 404 에러
-		//redirect일때 다시 getBoard호출할때 board seq(pk) null 문제 - return redirect주소를 위와 같이 변경해서 해결(와 이딴게 오래걸림)		
+		//redirect일때 다시 getBoard호출할때 board seq(pk) null 문제 - return redirect주소를 위와 같이 변경해서 해결
 	}
 	
 	@PostMapping("/updateComment")

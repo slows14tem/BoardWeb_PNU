@@ -17,7 +17,7 @@ public class MemberServiceImpl implements MemberService {
 	private PasswordEncoder encoder;
 	
 	public void join(Member member) {
-		//회원가입은 모두가 접근 가능해야하기때문에 system 컨트롤러에서 처리
+		//회원가입은 모두가 접근 가능해야하기때문에 url:/system/에서 처리
 		//아이디 중복 체크(중복되었다는 메세지 필요)
 		//여기서 스트링 또는 null 리턴해서 컨트롤러에서 null이면 join에서 메세지 띄우고 아니면 로그인으로 리다이렉트 
 		if (memberRepo.findById(member.getId()).orElse(null) != null) return;
@@ -31,8 +31,7 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	public Member info(Member member) {
-		Member temmem = memberRepo.findById(member.getId()).get();
-		return temmem;
+		return memberRepo.findById(member.getId()).get();
 	}
 	
 	//회원정보 수정(이름, 비밀번호) -> 차후 기존 비밀번호 입력 후 변경 가능하게 수정

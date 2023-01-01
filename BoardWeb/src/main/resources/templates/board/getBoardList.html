@@ -1,6 +1,6 @@
 <html xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
-	<!-- 타임리프와 시큐리티를 연동하기 위한 모듈 -->
+<!-- 타임리프와 시큐리티를 연동하기 위한 모듈 -->
 
 
 <head>
@@ -23,43 +23,8 @@
 </head>
 
 <body th:align="center">
-
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">BoardWeb</a>
-			<button class="navbar-toggler" type="button"
-				data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-				aria-controls="navbarNavDropdown" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link active"
-						aria-current="page" th:href="@{/board/getBoardList}">목록</a></li>
-					<li class="nav-item"><a class="nav-link"
-						th:href="@{/admin/adminPage}">게시판관리</a></li>
-					<li class="nav-item dropdown"><a
-						class="nav-link dropdown-toggle" href="#" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false"> 정보관리 </a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" th:href="@{/member/memberInfo}">회원정보
-									수정</a></li>
-							<li><a class="dropdown-item"
-								th:href="@{/member/deleteMember}">회원탈퇴</a></li>
-						</ul></li>
-				</ul>
-			</div>
-			<form class="d-flex" role="search">
-				<span sec:authorize="isAuthenticated()"> <!-- 어떤 권한이든 인증되었다면 이 글이 보임 -->
-					<b><font color="red"><span
-							sec:authentication="principal.member.name"></span> <!-- 회원정보 수정하면 여기서 바로 적용이 안되는 현상(db에는 바로 수정가능)
-		securityuser의 principal 업데이트 하려면 다시 로그인 해야함 --> </font></b> 님 환영합니다 &nbsp;&nbsp;
-				</span> <input type="button"
-					th:onclick="|location.href='@{/system/logout}'|" value="로그아웃">&nbsp;
-			</form>
-		</div>
-	</nav>
+<!-- 게시판 상단의 회원정보관리 및 로그아웃 기능.. 모든 창에 같은 코드를 입력하면 중복된 코드 증가로 navigation.html로 생성한 후 불러오기 -->
+<div th:insert="board/navigation :: header"></div>
 
 	<br />
 
@@ -103,14 +68,29 @@
 	</table>
 	<br>
 
-	<nav aria-label="...">
+	<nav aria-label="Page navigation example">
 		<ul class="pagination justify-content-center">
-			<li th:each="page: ${#numbers.sequence(0,totalPage -1)}"
+			<li class="page-item"><a th:if="${hasPrev}" class="page-link"
+				th:href="@{/board/getBoardList(searchCondition=${search.searchCondition}, 
+				searchKeyword=${search.searchKeyword}, page=${current-1})}"
+				aria-label="Previous"> <span aria-hidden="true">&laquo;</span>
+			</a><a th:unless="${hasPrev}" class="page-link disabled"
+				aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+			<li th:each="page: ${#numbers.sequence(1,totalPage)}"
 				class="page-item"><a class="page-link"
-				th:href="@{/board/getBoardList(searchCondition=${search.searchCondition}, searchKeyword=${search.searchKeyword}, page=${pageStat.index})}"
+				th:href="@{/board/getBoardList(searchCondition=${search.searchCondition}, 
+				searchKeyword=${search.searchKeyword}, page=${pageStat.index})}"
 				th:text="${pageStat.index+1}"></a></li>
+
+			<li class="page-item"><a th:if="${hasNext}" class="page-link"
+				th:href="@{/board/getBoardList(searchCondition=${search.searchCondition}, 
+				searchKeyword=${search.searchKeyword}, page=${current+1})}"
+				aria-label="Next"> <span aria-hidden="true">&raquo;</span>
+			</a><a th:unless="${hasNext}" class="page-link disabled"
+				aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
 		</ul>
 	</nav>
+
 
 	<!-- <a th:href="@{/board/insertBoard}">게시글 등록</a> 검색창 옆으로 이동 -->
 </body>

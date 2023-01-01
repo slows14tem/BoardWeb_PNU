@@ -25,12 +25,22 @@ public class SecurityConfig {
 
 		//특정 URL 경로에 권한을 가진 사용자만 접근을 허용
 		security.authorizeRequests().antMatchers("/", "/system/**").permitAll();
-		security.authorizeRequests().antMatchers("/board/**").authenticated();
-		security.authorizeRequests().antMatchers("/member/**").authenticated();
+		security.authorizeRequests().antMatchers("/board/**", "/member/**").authenticated();
 		security.authorizeRequests().antMatchers("/admin/**").hasRole("ADMIN");
 
-		//크로스 위조요청 설정 비활성화(RESTfull 사용하기 위해)
+		//크로스 위조요청 설정 비활성화(REST api 사용하기 위해)
 		security.csrf().disable();
+		
+		//세션 관리
+		security.sessionManagement()
+				//최대 허용 가능 세션 수
+				.maximumSessions(1)
+				//최대 허용 세션수인데 추가적인 인증요청이 있을 경우 처리방식
+				//true: 현재 사용자 인증 실패
+				//false: 기존 세션 만료(default)
+				.maxSessionsPreventsLogin(false)
+				//세션 만료일 경우 이동할 페이지
+				.expiredUrl("/");
 		
 		//사용자 정의 로그인 화면 설정
 		security.formLogin().loginPage("/system/login").defaultSuccessUrl("/board/getBoardList", true);
@@ -50,3 +60,8 @@ public class SecurityConfig {
 	}
 
 }
+
+
+//https://velog.io/@seongwon97/Spring-Security-%EC%84%B8%EC%85%98-%EA%B4%80%EB%A6%AC
+//https://wildeveloperetrain.tistory.com/165
+//https://wave1994.tistory.com/150   csrf관련

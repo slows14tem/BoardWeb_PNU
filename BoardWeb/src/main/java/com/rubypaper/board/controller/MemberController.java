@@ -27,9 +27,8 @@ public class MemberController {
 	}
 	
 	@PostMapping("/updateMember")
-	public String updateMember(Member member, Model model) {
+	public String updateMember(Member member) {
 		memberService.updateMember(member);
-		model.addAttribute("member", memberService.info(member));
 		return "redirect:/board/getBoardList";
 	}
 	
