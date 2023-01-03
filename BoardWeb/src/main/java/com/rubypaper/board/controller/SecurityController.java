@@ -7,11 +7,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.rubypaper.board.domain.Member;
 import com.rubypaper.board.service.MemberService;
+import com.rubypaper.board.validation.CheckIdValidator;
 import com.rubypaper.board.validation.ValidationSequence;
 
 @Controller
@@ -19,8 +23,22 @@ public class SecurityController {
 	@Autowired
 	private MemberService memberService;
 	
+	@Autowired
+	private CheckIdValidator checkIdValidator;
+	
+	@InitBinder
+    public void validatorBinder(WebDataBinder binder) {
+        binder.addValidators(checkIdValidator);
+    }
+	
 	@GetMapping("/system/login")
-	public void login() {}
+	public String login(@RequestParam(value = "error", required = false)String error,
+            @RequestParam(value = "exception", required = false)String exception,
+            Model model) {
+		model.addAttribute("error", error);
+		model.addAttribute("exception", exception);
+		return "/system/login";
+	}
 
 	@GetMapping("/system/accessDenied")
 	public void accessDenied() {}

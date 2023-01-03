@@ -23,16 +23,12 @@ public class MemberServiceImpl implements MemberService {
 	
 	public void join(Member member) {
 		//회원가입은 모두가 접근 가능해야하기때문에 url:/system/에서 처리
-		//아이디 중복 체크(중복되었다는 메세지 필요)
-		//여기서 스트링 또는 null 리턴해서 컨트롤러에서 null이면 join에서 메세지 띄우고 아니면 로그인으로 리다이렉트 
-		if (memberRepo.findById(member.getId()).orElse(null) != null) return;
-		else {					
-			//SecurityController의 joinmem에서 아이디, 비밀번호, 이름 입력받고 비밀번호 암호화, enabled, role을 자동 처리한 뒤 db저장
-			member.setPassword(encoder.encode(member.getPassword()));
-			member.setEnabled(true);
-			member.setRole(Role.ROLE_MEMBER);
-			memberRepo.save(member);
-		}
+
+		//SecurityController의 joinmem에서 아이디, 비밀번호, 이름 입력받고 비밀번호 암호화, enabled, role을 자동 처리한 뒤 db저장
+		member.setPassword(encoder.encode(member.getPassword()));
+		member.setEnabled(true);
+		member.setRole(Role.ROLE_MEMBER);
+		memberRepo.save(member);
 	}
 	
 	public Map<String, String> validateHandling(Errors errors){
@@ -40,8 +36,6 @@ public class MemberServiceImpl implements MemberService {
 		 
         for (FieldError error : errors.getFieldErrors()) {
             String validKeyName = String.format("valid_%s", error.getField());
-            System.out.println(validKeyName);
-            System.out.println(error.getDefaultMessage());
             validatorResult.put(validKeyName, error.getDefaultMessage());
         }
         return validatorResult;

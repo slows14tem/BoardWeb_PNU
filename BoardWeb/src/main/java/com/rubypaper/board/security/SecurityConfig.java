@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 
 @Configuration
 @EnableWebSecurity
@@ -16,6 +17,9 @@ public class SecurityConfig {
 
 	@Autowired
 	private SecurityUserDetailsService userDetailsService;
+	
+	@Autowired
+	private AuthenticationFailureHandler customFailureHandler;
 
 	@Bean
 	public SecurityFilterChain sercurityFilterChain(HttpSecurity security) throws Exception {
@@ -42,8 +46,14 @@ public class SecurityConfig {
 				//세션 만료일 경우 이동할 페이지
 				.expiredUrl("/");
 		
-		//사용자 정의 로그인 화면 설정
-		security.formLogin().loginPage("/system/login").defaultSuccessUrl("/board/getBoardList", true);
+		//로그인 폼 커스텀
+		security.formLogin()
+				//사용자 정의 로그인 화면 설정
+				.loginPage("/system/login")
+				//로그인 성공시 화면 설정
+				.defaultSuccessUrl("/board/getBoardList", true)
+				//로그인 실패시 처리
+				.failureHandler(customFailureHandler);
 		
 		//accessDenied 페이지 설정
 		security.exceptionHandling().accessDeniedPage("/system/accessDenied");
