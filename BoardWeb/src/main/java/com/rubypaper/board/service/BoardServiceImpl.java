@@ -17,17 +17,15 @@ public class BoardServiceImpl implements BoardService {
 	
 	@Autowired
 	private BoardRepository boardRepo;
-	
-	
 
 	public void insertBoard(Board board) {
-		boardRepo.save(board);		
+		boardRepo.save(board);
 	}
 	
 	public void updateBoard(Board board) {
 		Board findBoard = boardRepo.findById(board.getSeq()).get();
 		findBoard.setTitle(board.getTitle());
-		findBoard.setContent(board.getContent());		
+		findBoard.setContent(board.getContent());
 		boardRepo.save(findBoard);
 	}
 	
