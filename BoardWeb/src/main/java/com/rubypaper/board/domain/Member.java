@@ -15,6 +15,9 @@ import javax.persistence.OrderBy;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+import com.rubypaper.board.validation.ValidationGroups.NotEmptyGroup;
+import com.rubypaper.board.validation.ValidationGroups.PatternCheckGroup;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,12 +27,12 @@ import lombok.Setter;
 public class Member { 
 	@Id 
 	@Column(name="MEMBER_ID")
-	@NotBlank(message = "아이디는 필수 입력 값입니다.")
-	@Pattern(regexp = "^[a-zA-Z0-9-_]{2,10}$", message = "아이디는 한글, 특수문자를 제외한 2~10자리여야 합니다.")
+	@NotBlank(message = "아이디는 필수 입력 값입니다.", groups = NotEmptyGroup.class)
+	@Pattern(regexp = "^[a-zA-Z0-9-_]{5,10}$", message = "아이디는 한글, 특수문자를 제외한 5~10자리여야 합니다.", groups = PatternCheckGroup.class)
 	private String id;
 	
-	@NotBlank(message = "비밀번호는 필수 입력 값입니다.")
-	@Pattern(regexp = "(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\\W)(?=\\S+$).{8,16}", message = "비밀번호는 8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.")
+	@NotBlank(message = "비밀번호는 필수 입력 값입니다.", groups = NotEmptyGroup.class)
+	@Pattern(regexp = "(?=.*[0-9])(?=.*[a-zA-Z])(?=.*\\W)(?=\\S+$).{8,16}", message = "비밀번호는 8~16자 영문 대 소문자, 숫자, 특수문자를 사용하세요.", groups = PatternCheckGroup.class)
 	private String password;
 	
 	private String name;
