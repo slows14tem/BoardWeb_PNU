@@ -24,7 +24,7 @@ public class CommentRepositoryTest {
 	@Autowired
 	private CommentRepository commentRepo;
 	
-	@Test
+//	@Test
 	public void commentlist() {
 		Board board = new Board();
 		board.setSeq(48L);

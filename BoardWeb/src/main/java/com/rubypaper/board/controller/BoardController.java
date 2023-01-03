@@ -2,6 +2,7 @@ package com.rubypaper.board.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -65,17 +66,17 @@ public class BoardController {
 		model.addAttribute("search", search);
 		model.addAttribute("boardList", boardList);
 		model.addAttribute("totalPage", totalPage);
+        model.addAttribute("current", page);
+		model.addAttribute("hasNext", boardList.hasNext());
+        model.addAttribute("hasPrev", boardList.hasPrevious());
 		return "board/getBoardList";
 	}
 
 	@GetMapping("/getBoard")
-	public String getBoard(Board board, Model model, @RequestParam(required=false, defaultValue = "0", value = "page") int page, 
-			@AuthenticationPrincipal SecurityUser principal) {
+	public String getBoard(Board board, Model model, @RequestParam(required=false, defaultValue = "0", value = "page") int page) {
 		model.addAttribute("board", boardService.getBoard(board));
 		//게시글 상세에서 해당 게시물의 댓글들을 모아오기 위해서 comment를 모아와서 getBoard에 넘겨줌
 		model.addAttribute("comment", commentService.getCommentList(board, page));
-		//현재 인증받은 멤버의 정보를 모델에 담아 뷰에 전달(게시물, 댓글의 작성자와 로그인한 맴버를 비교)
-		model.addAttribute("member", principal.getMember());
 		return "board/getBoard";
 	}
 

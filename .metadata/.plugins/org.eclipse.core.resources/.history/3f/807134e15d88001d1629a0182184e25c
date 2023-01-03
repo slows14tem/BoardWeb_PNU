@@ -1,0 +1,54 @@
+package com.rubypaper.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.rubypaper.board.domain.Member;
+import com.rubypaper.board.security.SecurityUser;
+import com.rubypaper.board.service.MemberService;
+
+@Controller
+@RequestMapping("/member/")
+public class MemberController {
+	
+	@Autowired
+	private MemberService memberService;
+	
+	@GetMapping("/join")
+	public void joinView() {
+	}
+	
+	@PostMapping("/joinMem")
+	public String join(Member member) {
+		memberService.join(member);
+		return "redirect:/system/login";
+	}
+	
+	@GetMapping("/memberInfo")
+	public String info(Member member, @AuthenticationPrincipal SecurityUser principal, Model model) {
+		member.setId(principal.getUsername());
+		model.addAttribute("member", memberService.info(member));
+		return "member/memberInfo";
+	}
+	
+	@PostMapping("/updateMember")
+	public String updateMember(Member member, Model model) {
+		memberService.updateMember(member);
+		model.addAttribute("member", memberService.info(member));
+		return "redirect:/board/getBoardList";
+	}
+	
+	@GetMapping("/deleteMember")
+	public String deleteMember(Member member, @AuthenticationPrincipal SecurityUser principal) {
+		//현재 접속중인 아이디가 탈퇴할 수 있도록 접속중인 아이디를 멤버에 저장
+		member.setId(principal.getUsername());
+		memberService.deleteMember(member);
+		return "redirect:/";
+	}
+
+}

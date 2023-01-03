@@ -29,8 +29,7 @@ public class SecurityController {
 	public void logout() {}
 	
 	@GetMapping("/system/join")
-	public String joinView() {
-		return "/system/join";
+	public void joinView() {
 	}
 	
 	@PostMapping("/system/joinMem")
