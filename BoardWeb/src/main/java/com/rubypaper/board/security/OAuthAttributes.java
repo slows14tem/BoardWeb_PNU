@@ -1,0 +1,48 @@
+package com.rubypaper.board.security;
+
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.rubypaper.board.domain.Role;
+import com.rubypaper.board.persistence.MemberRepository;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@Getter
+public class OAuthAttributes {
+	
+	@Autowired
+	private MemberRepository memberRepo;
+	
+    private Map<String, Object> attributes;
+    private String nameAttributeKey;
+    private String id;
+    private String name;
+    private Role role;
+    
+    public static OAuthAttributes of(String registrationId,
+                                     String userNameAttributeName,
+                                     Map<String, Object> attributes) {
+        /* 구글인지 네이버인지 카카오인지 구분하기 위한 메소드 (ofNaver, ofKaKao) */
+ 
+        return ofGoogle(userNameAttributeName, attributes);
+    }
+ 
+    private static OAuthAttributes ofGoogle(String userNameAttributeName,
+                                            Map<String, Object> attributes) {
+        return OAuthAttributes.builder()
+                .id((String) attributes.get("email"))
+                .name((String) attributes.get("name"))
+                .attributes(attributes)
+                .nameAttributeKey(userNameAttributeName)
+                .build();
+    }
+
+}

@@ -20,6 +20,10 @@ public class SecurityConfig {
 	
 	@Autowired
 	private AuthenticationFailureHandler customFailureHandler;
+	
+	// OAuth
+	@Autowired
+    private CustomOAuth2UserService customOAuth2UserService;
 
 	@Bean
 	public SecurityFilterChain sercurityFilterChain(HttpSecurity security) throws Exception {
@@ -60,6 +64,13 @@ public class SecurityConfig {
 		
 		//현제 브라우저와 연관된 세션을 강제종료(로그 아웃)
 		security.logout().logoutUrl("/system/logout").invalidateHttpSession(true).logoutSuccessUrl("/");
+		
+		//OAuth	
+//		security.oauth2Login().defaultSuccessUrl("/board/getBoardList")
+//        .userInfoEndpoint().userService(customOAuth2UserService);
+		//구글 로그인 자체는 구현 가능하나 thymeleaf에서 일반 로그인, 구글로그인 상관없이 이름을 출력하려면 기존의 principal.member.name으로는 불가능
+		//세션 생성 + 커스텀 어노테이션이 필요한데 커스텀 어노테이션의 연구가 필요
+		
 		return security.build();
 	}
 	
