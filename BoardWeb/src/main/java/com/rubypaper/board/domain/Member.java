@@ -45,7 +45,7 @@ public class Member {
 	@OneToMany(mappedBy="member", fetch=FetchType.EAGER, cascade = CascadeType.REMOVE)
 	private List<Board> boardList = new ArrayList<Board>();
 	
-	@OneToMany(mappedBy = "member", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+	@OneToMany(mappedBy = "member", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
     @OrderBy("seq asc") // 댓글 정렬
     private List<Comment> comments;
 

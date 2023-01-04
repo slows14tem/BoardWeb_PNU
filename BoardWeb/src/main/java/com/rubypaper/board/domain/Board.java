@@ -49,10 +49,5 @@ public class Board {
 	@OneToMany(mappedBy = "board", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @OrderBy("seq asc") // 댓글 정렬
     private List<Comment> comments;
-	
-	public void setMember(Member member) {
-		this.member = member;
-		member.getBoardList().add(this);
-	}
 
 }

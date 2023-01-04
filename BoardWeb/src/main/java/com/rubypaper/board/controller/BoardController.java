@@ -63,6 +63,7 @@ public class BoardController {
 		Page<Board> boardList = boardService.getBoardList(search, page);
 		int totalPage = boardList.getTotalPages();
 		//검색정보를 쿼리스트링으로 입력받기 위해 search 정보를 view로 전달
+		//검색된 게시물 리스트와 페이징 정보도 함께 전달
 		model.addAttribute("search", search);
 		model.addAttribute("boardList", boardList);
 		model.addAttribute("totalPage", totalPage);
@@ -75,7 +76,7 @@ public class BoardController {
 	@GetMapping("/getBoard")
 	public String getBoard(Board board, Model model, @RequestParam(required=false, defaultValue = "0", value = "page") int page) {
 		model.addAttribute("board", boardService.getBoard(board));
-		//게시글 상세에서 해당 게시물의 댓글들을 모아오기 위해서 comment를 모아와서 getBoard에 넘겨줌
+		//게시글 상세에서 해당 게시물의 댓글들을 출력하기 위해서 comment를 모아와서 getBoard에 넘겨줌
 		model.addAttribute("comment", commentService.getCommentList(board, page));
 		return "board/getBoard";
 	}
