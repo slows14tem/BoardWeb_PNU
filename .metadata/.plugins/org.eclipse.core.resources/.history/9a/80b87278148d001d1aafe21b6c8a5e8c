@@ -1,0 +1,96 @@
+package com.rubypaper.board.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.rubypaper.board.domain.Board;
+import com.rubypaper.board.domain.Search;
+import com.rubypaper.board.security.SecurityUser;
+import com.rubypaper.board.service.BoardService;
+import com.rubypaper.board.service.CommentService;
+
+@Controller
+@RequestMapping("/board/")
+public class BoardController {
+	@Autowired
+	private BoardService boardService;
+	@Autowired
+	private CommentService commentService;
+
+	@GetMapping("/insertBoard")
+	public String insertBoardView() {
+		//insertBoardView 오픈
+		return "board/insertBoard";
+	}
+
+	@PostMapping("/insertBoard")
+	public String insertBoard(Board board, @AuthenticationPrincipal SecurityUser principal) {
+		//게시글 입력
+		board.setMember(principal.getMember());	//현재 인증 통과한 멤버 정보를 입력
+		boardService.insertBoard(board);
+		return "redirect:getBoardList";
+	}
+
+	@PostMapping("/updateBoard")
+	public String updateBoard(Board board) {
+		//게시글 수정
+		boardService.updateBoard(board);
+		return "redirect:getBoard?seq=" + board.getSeq();
+	}
+
+	@PostMapping("/deleteBoard")
+	//게시글 삭제
+	public String deleteBoard(Board board) {
+		boardService.deleteBoard(board);
+		return "redirect:getBoardList";
+		//forward로 하면 지워진 게시물 번호가 쿼리스트링으로 남아있다. db에 변화가 발생하면 redirect로 하는게 맞을 듯
+	}
+
+	@RequestMapping("/getBoardList")
+	public String getBoardList(Model model, Search search, @RequestParam(required=false, defaultValue = "0", value = "page") int page) {
+		//검색 조건에 맞는 게시글 리스트 생성
+		if (search.getSearchCondition() == null)
+			search.setSearchCondition("TITLE");
+		if (search.getSearchKeyword() == null)
+			search.setSearchKeyword("");
+		Page<Board> boardList = boardService.getBoardList(search, page);
+		
+//		SessionUser member = (SessionUser)httpSession.getAttribute("member");
+//		
+//        if(member != null) {
+//        	model.addAttribute("userName", member.getName());
+//        }
+
+		
+		int totalPage = boardList.getTotalPages();
+		//검색정보를 쿼리스트링으로 입력받기 위해 search 정보를 view로 전달
+		//검색된 게시물 리스트와 페이징 정보도 함께 전달
+		model.addAttribute("search", search);
+		model.addAttribute("boardList", boardList);
+		model.addAttribute("totalPage", totalPage);
+        model.addAttribute("current", page);
+		model.addAttribute("hasNext", boardList.hasNext());
+        model.addAttribute("hasPrev", boardList.hasPrevious());
+		return "board/getBoardList";
+	}
+
+	@GetMapping("/getBoard")
+	public String getBoard(Board board, Model model, @RequestParam(required=false, defaultValue = "0", value = "page") int page) {
+		model.addAttribute("board", boardService.getBoard(board));
+		//게시글 상세에서 해당 게시물의 댓글들을 출력하기 위해서 comment를 모아와서 getBoard에 넘겨줌
+		model.addAttribute("comment", commentService.getCommentList(board, page));
+		return "board/getBoard";
+	}
+
+}
+
+// 검색하면 처음 1번 페이지는 원하는 게시물만 검색되지만 2번째 페이지로 넘어가면 검색된 페이지의 2페이지가 아니라 전체 게시물의 2페이지로 넘어가는 오류 발생
+// model.addAttribute("search", search) 을 통해서 검색정보를 view로 이동해 쿼리스트링에 직접 입력하는 방식으로 해결
+// 더 좋은 방법이 있는지 확인해봐야 함

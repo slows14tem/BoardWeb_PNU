@@ -1,0 +1,8 @@
+package com.rubypaper.board.security.oauth;
+
+public class Snippet {
+	public static void main(String[] args) {
+		setDefaultFailureUrl
+	}
+}
+
