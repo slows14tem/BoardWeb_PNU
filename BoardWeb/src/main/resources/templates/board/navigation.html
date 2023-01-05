@@ -45,8 +45,9 @@
 		</div>
 		<form class="d-flex" role="search">
 			<span sec:authorize="isAuthenticated()"> <!-- 어떤 권한이든 인증되었다면 이 글이 보임 -->
-				<b><font color="red"><span
-						sec:authentication="principal.member.name"></span></font></b> 님 환영합니다 &nbsp;&nbsp;
+				<b><font color="red">
+				<span sec:authentication="principal.member.name"></span>
+				</font></b> 님 환영합니다 &nbsp;&nbsp;
 			</span> <input type="button"
 				th:onclick="|location.href='@{/system/logout}'|" value="로그아웃">&nbsp;
 		</form>

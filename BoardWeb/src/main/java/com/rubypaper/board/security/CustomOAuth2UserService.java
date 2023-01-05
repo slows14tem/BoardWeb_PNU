@@ -2,6 +2,8 @@ package com.rubypaper.board.security;
 
 import java.util.Collections;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
@@ -21,7 +23,9 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequest, OAuth2User> {
  
-//    private final HttpSession session;
+	@Autowired
+    private HttpSession session;
+	
 	@Autowired
 	private MemberRepository memberRepo;
  
@@ -38,15 +42,16 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
                 .getUserInfoEndpoint().getUserNameAttributeName();
  
         /* OAuth2UserService */
-        OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
+        OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());            
         
-        /* 세션 정보를 저장하는 직렬화된 dto 클래스*/
-//        session.setAttribute("user", new UserSessionDto(user)); 
         Member member = new Member();
         member.setId(attributes.getId());
         member.setName(attributes.getName());
         member.setRole(attributes.getRole());
         memberRepo.save(member);
+        
+        /* 세션 정보를 저장하는 직렬화된 dto 클래스*/
+        session.setAttribute("member", new SessionUser(member)); 
  
         return new DefaultOAuth2User(
         		Collections.singleton(new SimpleGrantedAuthority("ROLE_SOCIAL")),

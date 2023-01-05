@@ -22,8 +22,8 @@ public class SecurityConfig {
 	private AuthenticationFailureHandler customFailureHandler;
 	
 	// OAuth
-	@Autowired
-    private CustomOAuth2UserService customOAuth2UserService;
+//	@Autowired
+//    private CustomOAuth2UserService customOAuth2UserService;
 
 	@Bean
 	public SecurityFilterChain sercurityFilterChain(HttpSecurity security) throws Exception {
@@ -79,6 +79,7 @@ public class SecurityConfig {
 		//비밀번호 암호화
 		return PasswordEncoderFactories.createDelegatingPasswordEncoder();
 	}
+
 
 }
 

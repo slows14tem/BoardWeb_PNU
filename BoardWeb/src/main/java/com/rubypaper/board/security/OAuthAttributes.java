@@ -18,9 +18,6 @@ import lombok.NoArgsConstructor;
 @Getter
 public class OAuthAttributes {
 	
-	@Autowired
-	private MemberRepository memberRepo;
-	
     private Map<String, Object> attributes;
     private String nameAttributeKey;
     private String id;

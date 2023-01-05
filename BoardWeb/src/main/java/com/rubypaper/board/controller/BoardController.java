@@ -1,8 +1,9 @@
 package com.rubypaper.board.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.rubypaper.board.domain.Board;
 import com.rubypaper.board.domain.Search;
 import com.rubypaper.board.security.SecurityUser;
+import com.rubypaper.board.security.SessionUser;
 import com.rubypaper.board.service.BoardService;
 import com.rubypaper.board.service.CommentService;
 
@@ -43,14 +45,15 @@ public class BoardController {
 	public String updateBoard(Board board) {
 		//게시글 수정
 		boardService.updateBoard(board);
-		return "forward:getBoardList";
+		return "redirect:getBoard?seq=" + board.getSeq();
 	}
 
 	@PostMapping("/deleteBoard")
 	//게시글 삭제
 	public String deleteBoard(Board board) {
 		boardService.deleteBoard(board);
-		return "forward:getBoardList";
+		return "redirect:getBoardList";
+		//forward로 하면 지워진 게시물 번호가 쿼리스트링으로 남아있다. db에 변화가 발생하면 redirect로 하는게 맞을 듯
 	}
 
 	@RequestMapping("/getBoardList")
@@ -61,6 +64,14 @@ public class BoardController {
 		if (search.getSearchKeyword() == null)
 			search.setSearchKeyword("");
 		Page<Board> boardList = boardService.getBoardList(search, page);
+		
+//		SessionUser member = (SessionUser)httpSession.getAttribute("member");
+//		
+//        if(member != null) {
+//        	model.addAttribute("userName", member.getName());
+//        }
+
+		
 		int totalPage = boardList.getTotalPages();
 		//검색정보를 쿼리스트링으로 입력받기 위해 search 정보를 view로 전달
 		//검색된 게시물 리스트와 페이징 정보도 함께 전달
