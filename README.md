@@ -50,14 +50,14 @@
 ![accessDeniedPage](https://user-images.githubusercontent.com/106790381/209681676-2ae81c83-05df-418d-9e2f-b9d59d5205d1.jpg)
 
 ## 게시판 상세
-[회원 가입, 정보 수정 및 회원 탈퇴](https://www.notion.so/3dd90be5986b4b728c5e2cd9dc8c3b25)
-[댓글 출력 및 댓글 작성, 수정, 삭제](https://www.notion.so/3b56f4fdfc934bc8a179ef51b0b06d1f)
-[Spring Security](https://www.notion.so/Spring-Security-a53c0076c41242cf9fb3e7c8b839e3f3)
-[게시판 검색 및 페이징 처리](https://www.notion.so/3ed67f2140ca447e9360246d55166a35)
-[조회수 증가](https://www.notion.so/c211e322434d41d4b6a274499bb96699)
-[작성자만 수정, 삭제하기](https://www.notion.so/d79a3d59545c4b50aef6b7ed53759803)
-[회원 가입 유효성 검사](https://www.notion.so/9ad23548468b40e6a35184445ad3c146)
-[로그인 실패 알림](https://www.notion.so/842f6257c657488c956c54a4999f14e5)
+* [회원 가입, 정보 수정 및 회원 탈퇴](https://www.notion.so/3dd90be5986b4b728c5e2cd9dc8c3b25)
+* [댓글 출력 및 댓글 작성, 수정, 삭제](https://www.notion.so/3b56f4fdfc934bc8a179ef51b0b06d1f)
+* [Spring Security](https://www.notion.so/Spring-Security-a53c0076c41242cf9fb3e7c8b839e3f3)
+* [게시판 검색 및 페이징 처리](https://www.notion.so/3ed67f2140ca447e9360246d55166a35)
+* [조회수 증가](https://www.notion.so/c211e322434d41d4b6a274499bb96699)
+* [작성자만 수정, 삭제하기](https://www.notion.so/d79a3d59545c4b50aef6b7ed53759803)
+* [회원 가입 유효성 검사](https://www.notion.so/9ad23548468b40e6a35184445ad3c146)
+* [로그인 실패 알림](https://www.notion.so/842f6257c657488c956c54a4999f14e5)
 
 ## 마무리
 
