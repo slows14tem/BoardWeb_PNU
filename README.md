@@ -14,12 +14,6 @@
 3. 개발 언어 JAVA 17
 4. 개발환경 : Spring Boot, JPA, Spring Security, Thymeleaf, BootStrap, H2 database, Git
 
-## 게시판 전체 구조
-![게시판 구조](https://user-images.githubusercontent.com/106790381/210834827-f52872f6-088a-4749-abcb-5e781a9fc067.jpg)
-
-## DB 구조
-![dbTable](https://user-images.githubusercontent.com/106790381/210834033-e09d41f5-1455-4d04-b320-b5eb4f40b30d.png)
-
 ## 배운점
 1. Spring Data JPA를 활용하여 기본적인 CRUD를 구현을 연습해 볼 수 있었다.
 2. Spring Security를 구현하여 인증, 인가, 세션 유지, 암호화등을 구현해 볼 수 있었다.
@@ -31,6 +25,13 @@
 1. DTO를 사용하는 방법에 대해서 공부하고 적용해볼 필요가 있다.
 2. Thymleaf를 사용해서 개발하기 편했지만 이후에 사용할 가능성이 없어보인다. React등 다른 방식의 프론트앤드 개발이 필요해 보인다.
 3. 전반적인 개발은 완료되었지만 배포하지 않아 다른 사람이 사용해 볼 수 없다. 프로젝트를 배포해 볼 필요성이 있어보인다.
+
+## 게시판 전체 구조
+![게시판 구조](https://user-images.githubusercontent.com/106790381/210834827-f52872f6-088a-4749-abcb-5e781a9fc067.jpg)
+
+## DB 구조
+![dbTable](https://user-images.githubusercontent.com/106790381/210834033-e09d41f5-1455-4d04-b320-b5eb4f40b30d.png)
+
 
 ## 화면 구성
 
