@@ -23,31 +23,31 @@
 
 ## 화면 구성
 
-### index
+### 1. index
 ![indexPage](https://user-images.githubusercontent.com/106790381/209680496-5adff416-2b9d-4d91-a22f-0ab14d5bcc3c.jpg)
 
-### join
+### 2. join
 ![joinPage](https://user-images.githubusercontent.com/106790381/209680854-ff4e4c87-3cf0-43db-bc42-b52a0fd11e61.jpg)
 
-### login
+### 3. login
 ![loginPage](https://user-images.githubusercontent.com/106790381/209681055-510ca889-e931-4ea7-8f92-ed1330dad7c3.jpg)
 
-### getBoardList
+### 4. getBoardList
 ![getBoardListPage](https://user-images.githubusercontent.com/106790381/209681100-15b89967-a7cc-4e4b-b64c-c53b589c6581.jpg)
 
-### getBoard
+### 5. getBoard
 ![getBoardPage](https://user-images.githubusercontent.com/106790381/209681138-be8a1573-958e-456c-bf10-41d57fbec738.jpg)
 
-### insertBoard
+### 6. insertBoard
 ![insertBoardPage](https://user-images.githubusercontent.com/106790381/209681351-51c844f2-ab10-4313-bbe2-b0e0d16782e7.jpg)
 
-### memberInfo
+### 7. memberInfo
 ![memberInfoPage](https://user-images.githubusercontent.com/106790381/209681402-02561e0a-4624-46be-a4ed-76941ea515ab.jpg)
 
-### admin
+### 8. admin
 ![adminPage](https://user-images.githubusercontent.com/106790381/209681636-0e3abc90-28b2-47db-a912-36d137c70e8e.jpg)
 
-### accessDenied
+### 9. accessDenied
 ![accessDeniedPage](https://user-images.githubusercontent.com/106790381/209681676-2ae81c83-05df-418d-9e2f-b9d59d5205d1.jpg)
 
 ## 배운점
