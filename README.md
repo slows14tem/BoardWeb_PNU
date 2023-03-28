@@ -13,6 +13,19 @@
 	* 개시물의 댓글 목록 생성, 새 댓글 등록, 수정, 삭제
 3. 개발 언어 JAVA 17
 4. 개발환경 : Spring Boot, JPA, Spring Security, Thymeleaf, BootStrap, H2 database, Git
+5. notion : https://crystalline-moonflower-e8a.notion.site/BoardWeb-7d46a5addb9d46febf7f53619bf5ce49
+### 게시판 기능 상세
+
+- [게시글 목록 출력 및 게시글 작성, 수정, 삭제](https://www.notion.so/48877b60121b4fb9808785ab3ad7a40a)
+- [회원 가입, 정보 수정 및 회원 탈퇴](https://www.notion.so/d69c1f17586141ab993f94bf709dbb44)
+- [댓글 출력 및 댓글 작성, 수정, 삭제](https://www.notion.so/501580cffc9845d7989195a3bcfdd43a)
+- [Spring Security](https://www.notion.so/Spring-Security-ce65a81ec40649db8ebc2defd443826a)
+- [게시판 검색 및 페이징 처리](https://www.notion.so/4a67769da2d14d298f7eaa29305ffe57)
+- [조회수 증가](https://www.notion.so/a1e9a64431144d019a3b64f4e3ab4bfe)
+- [작성자만 수정, 삭제하기](https://www.notion.so/08acea59c38e4a2ca978bcea49573fd7)
+- [회원 가입 유효성 검사](https://www.notion.so/29dbe8747ffa488b992c05c500228bce)
+- [로그인 실패 알림](https://www.notion.so/d8731e771da94f58af26565fbae8b504)
+- [참조](https://www.notion.so/8b5c29b7662f44cc94a6c71e3ad3f70e)
 
 ## 게시판 전체 구조
 ![게시판 구조](https://user-images.githubusercontent.com/106790381/210834827-f52872f6-088a-4749-abcb-5e781a9fc067.jpg)
